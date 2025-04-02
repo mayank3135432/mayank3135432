@@ -1,0 +1,147 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{fontawesome}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1in}
+
+% Custom colors
+\definecolor{headercolor}{RGB}{0,112,201}
+\definecolor{bulletcolor}{RGB}{0,112,201}
+
+% Commands
+\newcommand{\resumeItem}[1]{\item[\textcolor{bulletcolor}{\textbullet}] \small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      {\small #3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & {\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\titleformat{\section}{\scshape\large\color{headercolor}}{}{0em}{}[\color{headercolor}\titlerule \vspace{-5pt}]
+\pagestyle{empty}
+
+\begin{document}
+
+% Header
+\begin{center}
+    \textbf{\Huge MAYANK TADALA} \\
+    \vspace{1mm}
+    \small
+    \faEnvelope\ \href{mailto:mayank.tadala@research.iiit.ac.in}{mayank.tadala@research.iiit.ac.in} $|$
+    \faLinkedin\ \href{https://www.linkedin.com/in/mayank-ts-92b9031b6/}{LinkedIn} $|$
+    \faGithub\ \href{https://github.com/mayank3135432}{GitHub} $|$
+    \faMapMarker\ IIIT Hyderabad
+\end{center}
+
+% Experience Section
+\section{Experience}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+        {Application Developer}{Jan 2025 -- April 2025 (Expected)}
+        {Perceptive Analytics}{}
+        \begin{itemize}[leftmargin=0.15in]
+            \resumeItem{Developing a Telugu Input Mobile Application with STT and OCR}
+            \resumeItem{Project being done as part of requirements for Design and Analysis of Software Systems course at IIIT-H}
+        \end{itemize}
+\end{itemize}
+
+% Projects Section
+\section{Projects}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeProjectHeading
+        {\textbf{Airline Database System}}{{\small\faGithub}\ \href{https://github.com/mayank3135432/Airline_Database_System}{GitHub}}
+        \begin{itemize}[leftmargin=0.15in]
+            \resumeItem{Designed normalized schemas to minimize redundancy in the database.}
+            \resumeItem{Made a CLI interface}
+        \end{itemize}
+        
+    \resumeProjectHeading
+        {\textbf{Custom Linux Shell}}{{\small\faGithub}\ \href{https://github.com/mayank3135432/osn-mp1}{GitHub}}
+        \begin{itemize}[leftmargin=0.15in]
+            \resumeItem{Linux shell, written in C. Support for process management, piping/redirection and built-in as well as system commands}
+            \resumeItem{Enabled user-defined aliases for enhanced customization.}
+        \end{itemize}
+        
+    \resumeProjectHeading
+        {\textbf{Machine Learning Techniques Implementations}}{{\small\faGithub}\ \href{https://github.com/mayank3135432/SMAI-Assignment-1}{GitHub}}
+        \begin{itemize}[leftmargin=0.15in]
+            \resumeItem{Implements Linear Regression and Regularization with Gradient Descent for Predicting Food Delivery Times}
+            \resumeItem{Decision Trees using Gini Inequality and compares accuracy with SciKit's Decision Tree for predicting transaction frauds}
+            \resumeItem{Implements SLIC with K means and does Video segmentation}
+        \end{itemize}
+        
+    \resumeProjectHeading
+        {\textbf{Diet Manager Cli}}{{\small\faGithub}\ \href{https://github.com/mayank3135432/diet_manager-cli}{GitHub}}
+        \begin{itemize}[leftmargin=0.15in]
+            \resumeItem{An command line tool to keep track of day to day consumption.}
+            \resumeItem{Written in Java with proper OOP design along with proper documentation and uml diagrams}
+        \end{itemize}
+        
+    \resumeProjectHeading
+        {\textbf{BuySell-web}}{{\small\faGithub}\ \href{https://github.com/mayank3135432/BUYSELL-web}{GitHub}}
+        \begin{itemize}[leftmargin=0.15in]
+            \resumeItem{A website built using MERN stack for IIIT-H students to trade goods.}
+            \resumeItem{Allows verified selling and buying of items via an OTP system.}
+            \resumeItem{Uses secure authorization via JWT tokens}
+        \end{itemize}
+
+    \resumeProjectHeading
+        {\textbf{Networking Projects}}{{\small\faGithub}\ \href{https://github.com/mayank3135432/Networking_File_System_Dummy}{GitHub}}
+        \begin{itemize}[leftmargin=0.15in]
+            \resumeItem{This project implements a basic Network File System (NFS) using a client-server architecture with a Naming Server, Storage Servers, and Clients. The key components work together to manage file storage and ensure that clients can access and modify files across multiple storage servers}
+            \resumeItem{The system facilitates file operations such as reading, writing, copying, deleting, and streaming audio files.}
+            \resumeItem{Developed a multiplayer Tic-Tac-Toe game using TCP and UDP.}
+        \end{itemize}
+\end{itemize}
+
+% Skills Section
+\section{Technical Skills}
+\begin{multicols}{2}
+\textbf{}\\
+\textbf{Languages:} Python, C, C++, JavaScript, SQL, Bash \\
+\textbf{Frameworks:} Flask, Django, React, Node.js, TensorFlow \\
+\textbf{Libraries:} Pandas, NumPy, OpenCV, Matplotlib,D3.js \\
+\textbf{Tools:} Git, VSCode, Linux, LaTeX \\
+\end{multicols}
+
+% Relevant Courses
+\section{\textcolor{headercolor}{Relevant Courses}}
+\begin{multicols}{2}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \item \textbf{\textcolor{MidnightBlue}{Programming:}} Computer Programming, DSA, Data Applications
+        \item \textbf{\textcolor{MidnightBlue}{Mathematics:}} Linear Algebra, Probability and Statistics, Discrete Mathematics, Numerical Algorithms, Algorithm Analysis and Design.
+        \item \textbf{\textcolor{MidnightBlue}{System Design:}} Operating Systems, Computer Systems Organization.
+        \item \textbf{\textcolor{MidnightBlue}{Networking:}} Computer Networks, Introduction to IoT.
+    \end{itemize}
+\end{multicols}
+
+% Education Section
+\section{Education}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+        {International Institute of Information Technology Hyderabad}{Hyderabad, India}
+        {B.Tech in Computer Science and Engineering and MS by Research}{Expected: 2028}
+    \resumeSubheading
+        {Vikas the Concept School}{Hyderabad, India}
+        {Class XII CBSE; 84\%}{2022}
+\end{itemize}
+
+\end{document}
